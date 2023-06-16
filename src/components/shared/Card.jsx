@@ -18,7 +18,7 @@ const Card = ({ children }) => {
 };
 
 Card.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.node,
   reverse: PropTypes.bool,
 };
 

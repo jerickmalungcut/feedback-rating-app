@@ -6,3 +6,36 @@
   background-color: black;
   color: white !important;
 }
+
+/* Hide the default radio button */
+.rating input[type="radio"] {
+  display: none;
+}
+
+/* Create a custom radio button */
+.rating input[type="radio"] + label {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* Center the label inside the radio button */
+.rating input[type="radio"] + label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for selected radio button */
+.rating input[type="radio"]:checked + label,
+.rating input[type="radio"] + label:hover {
+  background-color: #333;
+}
